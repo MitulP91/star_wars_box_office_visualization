@@ -1,0 +1,214 @@
+<div class="display" id="disp-0">
+  <div class="title"><%= @movies[0].title %></div>
+  <div class="gross"><%= "$" + number_with_delimiter(@movies[0].gross, :delimiter => ',') %></div>
+</div>
+
+<div class="display" id="disp-1">
+  <div class="title"><%= @movies[1].title %></div>
+  <div class="gross"><%= "$" + number_with_delimiter(@movies[1].gross, :delimiter => ',') %></div>
+</div>
+
+<div class="display" id="disp-2">
+  <div class="title"><%= @movies[2].title %></div>
+  <div class="gross"><%= "$" + number_with_delimiter(@movies[2].gross, :delimiter => ',') %></div>
+</div>
+
+<div class="display" id="disp-3">
+  <div class="title"><%= @movies[3].title %></div>
+  <div class="gross"><%= "$" + number_with_delimiter(@movies[3].gross, :delimiter => ',') %></div>
+</div>
+
+<div class="display" id="disp-4">
+  <div class="title"><%= @movies[4].title %></div>
+  <div class="gross"><%= "$" + number_with_delimiter(@movies[4].gross, :delimiter => ',') %></div>
+</div>
+
+<div class="display" id="disp-5">
+  <div class="title"><%= @movies[5].title %></div>
+  <div class="gross"><%= "$" + number_with_delimiter(@movies[5].gross, :delimiter => ',') %></div>
+</div>
+
+<!-- D3 javascript w/ AJAX calls -->
+<script type="text/javascript">
+
+var titles = [];
+var gross = [];
+var gross_percentage = [];
+var movies = [];
+var titles = [];
+var total_gross = 4314077024;
+
+ajaxCall = function() {
+  $.ajax({
+    type: 'GET',
+    async: false,
+    dataType: 'json',
+    url: '/show'
+  }).done(function(data) {
+    var values = d3.values(data);
+
+    for(var i in values) {
+      titles.push(values[i].title);
+
+      gross.push(values[i].gross);
+
+      var percentage = values[i].gross / total_gross;
+      gross_percentage.push(percentage);
+
+      var movie = { title: values[i].title, gross: values[i].gross, gross_percent: percentage };
+      movies.push(movie);
+    }
+    displayGraph();
+  });
+}
+
+displayGraph = function() {
+  ///////////////////////////
+  // PIE CHART D3 FUNCTION //
+  ///////////////////////////
+  var width = 1000,
+    height = 550,
+    radius = Math.min(width, height) / 2 - 10;
+
+  var data =  gross_percentage;
+  var ep = ["Episode 1", "Episode 2", "Episode 3", "Episode 4", "Episode 5", "Episode 6"];
+  var color = ['#468966', '#FFF0A5', '#FFB03B', '#B64926', '#8E2800', '#472762.7']
+
+  var arc = d3.svg.arc()
+      .outerRadius(radius)
+      .innerRadius(200);
+
+  var pie = d3.layout.pie()
+    .sort(null);
+
+  var arcOver = d3.svg.arc()
+    .outerRadius(radius);
+
+  var svg = d3.select("body").append("svg")
+      .datum(data)
+      .attr("width", width)
+      .attr("height", height)
+    .append("g")
+      .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+  var arcs = svg.selectAll("g.arc")
+      .data(pie)
+    .enter().append("g")
+      .attr("class", "arc");
+
+  arcs.append("path")
+    .attr("fill", function(d, i) { return color[i]; })
+    .attr("fill-opacity", "0.8")
+    .on('click', function(d, i) {
+      $('.display').stop().fadeOut(500);
+
+      setTimeout(function() {
+        $('#disp-'+i).stop().fadeIn(500);
+      }, 600);
+    })
+    .on('mouseover', function(d, i) {
+        d3.select(this).transition()
+          .duration(500)
+          .attr('fill-opacity', "1");
+      })
+      .on('mouseleave', function(d, i) {
+        d3.select(this).transition()
+          .duration(500)
+          .attr('fill-opacity', "0.8");
+      })
+    .transition()
+      .ease("bounce")
+      .duration(1500)
+      .attrTween("d", tweenPie)
+    .transition()
+      .ease("elastic")
+      .delay(function(d, i) { return 1500 + i * 50; })
+      .duration(750)
+      .attrTween("d", tweenDonut);
+
+  setTimeout(function() {
+    arcs.append("text")
+      .attr("class", "text")
+      .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
+      .attr("dy", ".35em")
+      .style("text-anchor", "middle")
+      .text(function(d, i) { 
+        return ep[i];
+      });
+  }, 1900);
+
+  function tweenPie(b) {
+    b.innerRadius = 0;
+    var i = d3.interpolate({startAngle: 0, endAngle: 0}, b);
+    return function(t) { return arc(i(t)); };
+  }
+
+  function tweenDonut(b) {
+    b.innerRadius = radius * .6;
+    var i = d3.interpolate({innerRadius: 0}, b);
+    return function(t) { return arc(i(t)); };
+  }
+
+
+
+
+
+  ///////////////////////////
+  // BAR GRAPH D3 FUNCTION //
+  ///////////////////////////
+
+  // data = gross_percentage
+
+  // var x = d3.scale.linear()
+  //   .domain([0, d3.max(data)])
+  //   .range([0, 800]);
+
+  // var chart = d3.select("body").append("svg")
+  //     .attr("class", "movie")
+  //     .attr("width", 1000)
+  //     .attr("height", 400)
+  //   .append("g")
+  //     .attr("transform", "translate(100,10)");
+
+  // chart.selectAll("rect")
+  //   .data(data)
+  //   .enter()
+  //   .append("rect")
+  //     .attr("width", 0)
+  //     .attr("height", 50)
+  //     .attr("y", function(d, i) { 
+  //       return i * 53; 
+  //     })
+  //     .on('mouseover', function(d, i) {
+  //       console.log(d3.select(this));
+  //     })
+  //   .transition()
+  //     .duration(3000)
+  //     .ease("elastic")
+  //     .attr("width", x)
+
+  // chart.selectAll("text")
+  //   .data(data)
+  //   .enter()
+  //   .append("text")
+  //   .attr("x", x/2)
+  //   .attr("dx", 30)
+  //   .attr("y", function(d, i) {
+  //     return ((i * 53) + 26);
+  //   })
+  //   .attr("text-anchor", "start")
+  //   .text(function(d, i) {
+  //     return titles[i] + ": $" + commaSeparateNumber(gross[i]);
+  //   });
+}
+
+function commaSeparateNumber(val){
+  while (/(\d+)(\d{3})/.test(val.toString())){
+    val = val.toString().replace(/(\d+)(\d{3})/, '$1'+','+'$2');
+  }
+  return val;
+}
+
+$(document).ready(ajaxCall);
+
+</script>
