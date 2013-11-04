@@ -72,7 +72,7 @@ displayGraph = function() {
 
   var data =  gross_percentage;
   var ep = ["Episode 1", "Episode 2", "Episode 3", "Episode 4", "Episode 5", "Episode 6"];
-  var color = ['#468966', '#FFF0A5', '#FFB03B', '#B64926', '#8E2800', '#472762.7']
+  var color = ['#0F1359', '#F2E9BB', '#BF6C06', ' #BF2517', '##0D0D0D', '#124F30']
 
   var arc = d3.svg.arc()
       .outerRadius(radius)
@@ -91,10 +91,14 @@ displayGraph = function() {
     .append("g")
       .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
+
   var arcs = svg.selectAll("g.arc")
       .data(pie)
     .enter().append("g")
       .attr("class", "arc");
+
+
+
 
   arcs.append("path")
     .attr("fill", function(d, i) { return color[i]; })
@@ -125,6 +129,19 @@ displayGraph = function() {
       .delay(function(d, i) { return 1500 + i * 50; })
       .duration(750)
       .attrTween("d", tweenDonut);
+
+      svg.selectAll('path')
+      .style("stroke", "blue")
+      .on('mouseover', function(d, i) {
+        d3.select(this).transition()
+          .duration(500)
+          .style('stroke', "rgb(229,200,100)");
+      })
+      .on('mouseleave', function(d, i) {
+        d3.select(this).transition()
+          .duration(500)
+          .style('stroke', "blue");
+      });
 
   setTimeout(function() {
     arcs.append("text")
