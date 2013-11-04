@@ -4,6 +4,10 @@
   <div class="percent"><%= "#{((@movies[0].gross / @display_num) * 100).round(2)}% of Total" %></div>
 </div>
 
+<div class="display" id="norm">
+  <div>Click Any Movie to View Specific Stats</div>
+</div>
+
 <div class="display" id="disp-1">
   <div class="title"><%= @movies[1].title %></div>
   <div class="gross"><%= "$" + number_with_delimiter(@movies[1].gross, :delimiter => ',') %></div>
@@ -108,7 +112,7 @@ displayGraph = function() {
 
   arcs.append("path")
     .attr("fill", function(d, i) { return color[i]; })
-    .attr("fill-opacity", "0.8")
+    .attr("fill-opacity", "0.6")
     .on('click', function(d, i) {
       $('.display').stop().fadeOut(500);
 
@@ -118,13 +122,13 @@ displayGraph = function() {
     })
     .on('mouseover', function(d, i) {
         d3.select(this).transition()
-          .duration(500)
+          .duration(300)
           .attr('fill-opacity', "1");
       })
       .on('mouseleave', function(d, i) {
         d3.select(this).transition()
-          .duration(500)
-          .attr('fill-opacity', "0.8");
+          .duration(300)
+          .attr('fill-opacity', "0.6");
       })
     .transition()
       .ease("bounce")

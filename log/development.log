@@ -8662,3 +8662,308 @@ Completed 200 OK in 4ms (Views: 2.4ms)
 
 
 Started GET "/assets/favicon.ico" for 127.0.0.1 at 2013-11-04 00:06:19 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-04 09:01:56 -0500
+Processing by MoviesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 37.5430ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5760ms
+  Rendered movies/index.html.erb within layouts/application (32.5ms)
+Completed 200 OK in 572ms (Views: 455.2ms)
+
+
+Started GET "/assets/d3.v3.min.js?body=1" for 127.0.0.1 at 2013-11-04 09:01:57 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-11-04 09:01:57 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-04 09:01:57 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-04 09:01:57 -0500
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2013-11-04 09:01:57 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-04 09:01:57 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-04 09:01:57 -0500
+
+
+Started GET "/assets/all_movies.js?body=1" for 127.0.0.1 at 2013-11-04 09:01:57 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-11-04 09:01:57 -0500
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-11-04 09:01:58 -0500
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2013-11-04 09:01:58 -0500
+
+
+Started GET "/assets/handlebars.js?body=1" for 127.0.0.1 at 2013-11-04 09:01:58 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-04 09:01:58 -0500
+
+
+Started GET "/assets/starwars-logo-2.png" for 127.0.0.1 at 2013-11-04 09:01:58 -0500
+
+
+Started GET "/assets/stars.png" for 127.0.0.1 at 2013-11-04 09:01:58 -0500
+
+
+Started GET "/graph" for 127.0.0.1 at 2013-11-04 09:01:59 -0500
+Processing by MoviesController#graph as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1430ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5210ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6940ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5710ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3720ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3470ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3660ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3420ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3440ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3550ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3750ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3720ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3890ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3850ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5940ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4140ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3560ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3480ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3890ms
+  Rendered movies/graph.html.erb within layouts/application (91.0ms)
+Completed 200 OK in 110ms (Views: 108.0ms)
+
+
+Started GET "/show" for 127.0.0.1 at 2013-11-04 09:02:00 -0500
+Processing by MoviesController#show as JSON
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 7.6900ms
+Completed 200 OK in 12ms (Views: 10.5ms)
+
+
+Started GET "/graph" for 127.0.0.1 at 2013-11-04 09:02:17 -0500
+Processing by MoviesController#graph as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6130ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4200ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3770ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3800ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3610ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3630ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3580ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3250ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3460ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3560ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3560ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3680ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4540ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.5600ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6660ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4950ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4460ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4880ms
+  Rendered movies/graph.html.erb within layouts/application (24.2ms)
+Completed 200 OK in 37ms (Views: 34.6ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2013-11-04 09:02:17 -0500
+
+
+Started GET "/assets/d3.v3.min.js?body=1" for 127.0.0.1 at 2013-11-04 09:02:17 -0500
+
+
+Started GET "/assets/all_movies.js?body=1" for 127.0.0.1 at 2013-11-04 09:02:17 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-04 09:02:17 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-04 09:02:17 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-11-04 09:02:17 -0500
+
+
+Started GET "/assets/handlebars.js?body=1" for 127.0.0.1 at 2013-11-04 09:02:17 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-04 09:02:17 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-04 09:02:17 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-11-04 09:02:17 -0500
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2013-11-04 09:02:17 -0500
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-11-04 09:02:17 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-04 09:02:17 -0500
+
+
+Started GET "/assets/stars.png" for 127.0.0.1 at 2013-11-04 09:02:17 -0500
+
+
+Started GET "/show" for 127.0.0.1 at 2013-11-04 09:02:17 -0500
+Processing by MoviesController#show as JSON
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5310ms
+Completed 200 OK in 4ms (Views: 2.4ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2013-11-04 09:02:17 -0500
+
+
+Started GET "/graph" for 127.0.0.1 at 2013-11-04 09:02:29 -0500
+Processing by MoviesController#graph as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7150ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5890ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6290ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4530ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3780ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4010ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3600ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3440ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3560ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3440ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3600ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3970ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3660ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 2.1820ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7680ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4760ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5540ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7650ms
+  Rendered movies/graph.html.erb within layouts/application (28.7ms)
+Completed 200 OK in 51ms (Views: 49.3ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2013-11-04 09:02:30 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-11-04 09:02:30 -0500
+
+
+Started GET "/assets/d3.v3.min.js?body=1" for 127.0.0.1 at 2013-11-04 09:02:30 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-04 09:02:30 -0500
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2013-11-04 09:02:30 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-04 09:02:30 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-04 09:02:30 -0500
+
+
+Started GET "/assets/all_movies.js?body=1" for 127.0.0.1 at 2013-11-04 09:02:30 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-04 09:02:30 -0500
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-11-04 09:02:30 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-11-04 09:02:30 -0500
+
+
+Started GET "/assets/handlebars.js?body=1" for 127.0.0.1 at 2013-11-04 09:02:30 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-04 09:02:30 -0500
+
+
+Started GET "/show" for 127.0.0.1 at 2013-11-04 09:02:30 -0500
+Processing by MoviesController#show as JSON
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.8580ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4680ms
+Completed 200 OK in 6ms (Views: 4.1ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2013-11-04 09:02:30 -0500
+
+
+Started GET "/graph" for 127.0.0.1 at 2013-11-04 09:02:46 -0500
+Processing by MoviesController#graph as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6510ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4080ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3920ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4230ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3650ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3690ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3720ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3520ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3660ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3570ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4040ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3800ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.6140ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6680ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4980ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3710ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 4.3200ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5570ms
+  Rendered movies/graph.html.erb within layouts/application (27.4ms)
+Completed 200 OK in 48ms (Views: 44.8ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-11-04 09:02:46 -0500
+
+
+Started GET "/assets/d3.v3.min.js?body=1" for 127.0.0.1 at 2013-11-04 09:02:46 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-04 09:02:46 -0500
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2013-11-04 09:02:46 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-04 09:02:46 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-04 09:02:46 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-04 09:02:46 -0500
+
+
+Started GET "/assets/all_movies.js?body=1" for 127.0.0.1 at 2013-11-04 09:02:46 -0500
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2013-11-04 09:02:47 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-11-04 09:02:47 -0500
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-11-04 09:02:47 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-04 09:02:47 -0500
+
+
+Started GET "/assets/handlebars.js?body=1" for 127.0.0.1 at 2013-11-04 09:02:47 -0500
+
+
+Started GET "/show" for 127.0.0.1 at 2013-11-04 09:02:47 -0500
+Processing by MoviesController#show as JSON
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 2.2260ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4490ms
+Completed 200 OK in 7ms (Views: 5.3ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2013-11-04 09:02:47 -0500
