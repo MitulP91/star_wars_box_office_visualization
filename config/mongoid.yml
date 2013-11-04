@@ -62,8 +62,6 @@ development:
 
     # Ensure all times are UTC in the app side. (default: false)
     # use_utc: false
-ENV['MONGOLAB_URI'] = s053838.mongolab.com:53838
-
 production:
   sessions:
     default:
