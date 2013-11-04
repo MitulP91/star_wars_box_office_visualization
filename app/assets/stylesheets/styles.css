@@ -31,7 +31,7 @@ svg {
 .display {
 	position: absolute;
 	top: 36%;
-	left: 37%;
+	left: 34%;
 	z-index: 500;
 }
 
@@ -48,7 +48,7 @@ svg {
 }
 
 #disp-3 {
-	left: 39%;
+	left: 36%;
 }
 
 #disp-4 {
