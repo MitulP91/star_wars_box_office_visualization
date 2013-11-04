@@ -48,8 +48,7 @@ svg {
 }
 
 #disp-3 {
-
-	left: 36%;
+	display: none ;
 }
 
 #disp-4 {

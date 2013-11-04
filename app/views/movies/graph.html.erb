@@ -1,31 +1,37 @@
 <div class="display" id="disp-0">
   <div class="title"><%= @movies[0].title %></div>
   <div class="gross"><%= "$" + number_with_delimiter(@movies[0].gross, :delimiter => ',') %></div>
+  <div class="percent"><%= "#{((@movies[0].gross / @display_num) * 100).round(2)}% of Total" %></div>
 </div>
 
 <div class="display" id="disp-1">
   <div class="title"><%= @movies[1].title %></div>
   <div class="gross"><%= "$" + number_with_delimiter(@movies[1].gross, :delimiter => ',') %></div>
+  <div class="percent"><%= "#{((@movies[1].gross / @display_num) * 100).round(2)}% of Total" %></div>
 </div>
 
 <div class="display" id="disp-2">
   <div class="title"><%= @movies[2].title %></div>
   <div class="gross"><%= "$" + number_with_delimiter(@movies[2].gross, :delimiter => ',') %></div>
+  <div class="percent"><%= "#{((@movies[2].gross / @display_num) * 100).round(2)}% of Total" %></div>
 </div>
 
 <div class="display" id="disp-3">
   <div class="title"><%= @movies[3].title %></div>
   <div class="gross"><%= "$" + number_with_delimiter(@movies[3].gross, :delimiter => ',') %></div>
+  <div class="percent"><%= "#{((@movies[3].gross / @display_num) * 100).round(2)}% of Total" %></div>
 </div>
 
 <div class="display" id="disp-4">
   <div class="title"><%= @movies[4].title %></div>
   <div class="gross"><%= "$" + number_with_delimiter(@movies[4].gross, :delimiter => ',') %></div>
+  <div class="percent"><%= "#{((@movies[4].gross / @display_num) * 100).round(2)}% of Total" %></div>
 </div>
 
 <div class="display" id="disp-5">
   <div class="title"><%= @movies[5].title %></div>
   <div class="gross"><%= "$" + number_with_delimiter(@movies[5].gross, :delimiter => ',') %></div>
+  <div class="percent"><%= "#{((@movies[5].gross / @display_num) * 100).round(2)}% of Total" %></div>
 </div>
 
 <!-- D3 javascript w/ AJAX calls -->
@@ -129,19 +135,6 @@ displayGraph = function() {
       .delay(function(d, i) { return 1500 + i * 50; })
       .duration(750)
       .attrTween("d", tweenDonut);
-
-      svg.selectAll('path')
-      .style("stroke", "blue")
-      .on('mouseover', function(d, i) {
-        d3.select(this).transition()
-          .duration(500)
-          .style('stroke', "rgb(229,200,100)");
-      })
-      .on('mouseleave', function(d, i) {
-        d3.select(this).transition()
-          .duration(500)
-          .style('stroke', "blue");
-      });
 
   setTimeout(function() {
     arcs.append("text")

@@ -12,6 +12,7 @@ class MoviesController < ApplicationController
 
 	def graph
 		@movies = Movie.all
+		@display_num = 4314077024.00
 	end
 
 	def show
