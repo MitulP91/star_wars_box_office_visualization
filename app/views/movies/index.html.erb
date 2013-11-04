@@ -2,3 +2,32 @@
 <h1>Total Box Office Gross: <%= "$" + number_with_delimiter(@display_num, :delimiter => ',') %></h1>
 
 <%= link_to 'View Gross of Each Movie', graph_path %>
+
+<section class="the-demo">
+	<ul>	
+		<li>
+			<div class="example-item">
+				<div class="lightsaber" id= "yoga">
+					<label for="yoda-example"></label>
+					<input type="checkbox" id="yoda-example" checked="checked">
+					<div class="switch"></div>
+					<div class="plasma yoda"></div>
+				</div>
+				
+			</div>
+		</li>
+
+		<li>
+		
+			<div class="example-item">
+				<div class="lightsaber" id= "vader">
+					<label for="darth-vader-example"></label>
+					<input type="checkbox" id="darth-vader-example" checked="checked">
+					<div class="switch"></div>
+					<div class="plasma vader"></div>
+				</div>
+			
+			</div>
+		</li>
+	</ul>
+</section>
