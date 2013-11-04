@@ -60,9 +60,19 @@ svg {
 }
 /* ********************lightsaber*****************/
 
+#container {
+	float: left;
+	/*margin-top: 20px;*/
+}
 
-.lightsaber { position: relative;
-			display: inline-block; }
+#container2 {
+	float: right;
+}
+
+.lightsaber { 
+	position: relative;
+	display: inline-block; 
+}
 
 .lightsaber label {
 	cursor: pointer;
@@ -94,7 +104,7 @@ svg {
 	border-radius: 12px 12px 0 0;
 	position: absolute;
 	bottom: 55px;
-	left: 2px;
+	left: 0px;
 	width: 10px;
 	display: block;
 
@@ -105,7 +115,7 @@ svg {
 	border-radius: 12px 12px 0 0;
 	position: absolute;
 	bottom: 55px;
-	left: 2px;
+	right: 0px;
 	width: 10px;
 	display: block;
 
@@ -290,5 +300,4 @@ div {
 	50% { box-shadow: 0 0 16px #e51115; }
 	to { box-shadow: 0 0 10px #e51115; }
 }
-
 
