@@ -9258,3 +9258,559 @@ Completed 200 OK in 5ms (Views: 3.1ms)
 
 
 Started GET "/assets/favicon.ico" for 127.0.0.1 at 2013-11-04 09:07:15 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-04 10:43:49 -0500
+Processing by MoviesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 47.8650ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5620ms
+  Rendered movies/index.html.erb within layouts/application (90.0ms)
+Completed 200 OK in 594ms (Views: 466.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-04 10:43:49 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-04 10:43:50 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-04 10:43:50 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-11-04 10:43:50 -0500
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2013-11-04 10:43:50 -0500
+
+
+Started GET "/assets/d3.v3.min.js?body=1" for 127.0.0.1 at 2013-11-04 10:43:50 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-04 10:43:50 -0500
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-11-04 10:43:50 -0500
+
+
+Started GET "/assets/handlebars.js?body=1" for 127.0.0.1 at 2013-11-04 10:43:50 -0500
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2013-11-04 10:43:50 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-11-04 10:43:50 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-04 10:43:50 -0500
+
+
+Started GET "/assets/all_movies.js?body=1" for 127.0.0.1 at 2013-11-04 10:43:50 -0500
+
+
+Started GET "/assets/starwars-logo-2.png" for 127.0.0.1 at 2013-11-04 10:43:50 -0500
+
+
+Started GET "/assets/stars.png" for 127.0.0.1 at 2013-11-04 10:43:50 -0500
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2013-11-04 10:43:50 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-04 10:43:57 -0500
+Processing by MoviesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.0840ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4530ms
+  Rendered movies/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 16ms (Views: 11.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-04 10:43:57 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-11-04 10:43:57 -0500
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2013-11-04 10:43:57 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-04 10:43:57 -0500
+
+
+Started GET "/assets/d3.v3.min.js?body=1" for 127.0.0.1 at 2013-11-04 10:43:57 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-04 10:43:57 -0500
+
+
+Started GET "/assets/all_movies.js?body=1" for 127.0.0.1 at 2013-11-04 10:43:57 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-04 10:43:57 -0500
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2013-11-04 10:43:57 -0500
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-11-04 10:43:57 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-11-04 10:43:57 -0500
+
+
+Started GET "/assets/starwars-logo-2.png" for 127.0.0.1 at 2013-11-04 10:43:57 -0500
+
+
+Started GET "/assets/stars.png" for 127.0.0.1 at 2013-11-04 10:43:57 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-04 10:43:57 -0500
+
+
+Started GET "/assets/handlebars.js?body=1" for 127.0.0.1 at 2013-11-04 10:43:57 -0500
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2013-11-04 10:43:57 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-04 10:44:35 -0500
+Processing by MoviesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.7620ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5560ms
+  Rendered movies/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 150ms (Views: 142.0ms)
+
+
+Started GET "/assets/d3.v3.min.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:35 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-11-04 10:44:35 -0500
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2013-11-04 10:44:35 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:35 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:35 -0500
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:35 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:35 -0500
+
+
+Started GET "/assets/all_movies.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:35 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-04 10:44:35 -0500
+
+
+Started GET "/assets/handlebars.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:36 -0500
+
+
+Started GET "/assets/starwars-logo-2.png" for 127.0.0.1 at 2013-11-04 10:44:36 -0500
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:36 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:36 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:36 -0500
+
+
+Started GET "/assets/stars.png" for 127.0.0.1 at 2013-11-04 10:44:36 -0500
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2013-11-04 10:44:36 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-04 10:44:37 -0500
+Processing by MoviesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 7.1010ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 2.3160ms
+  Rendered movies/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 26ms (Views: 12.7ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-11-04 10:44:38 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:38 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-04 10:44:38 -0500
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2013-11-04 10:44:38 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:38 -0500
+
+
+Started GET "/assets/handlebars.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:38 -0500
+
+
+Started GET "/assets/d3.v3.min.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:38 -0500
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:38 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:38 -0500
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:38 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:38 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:38 -0500
+
+
+Started GET "/assets/all_movies.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:38 -0500
+
+
+Started GET "/assets/starwars-logo-2.png" for 127.0.0.1 at 2013-11-04 10:44:38 -0500
+
+
+Started GET "/assets/stars.png" for 127.0.0.1 at 2013-11-04 10:44:38 -0500
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2013-11-04 10:44:38 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-04 10:44:44 -0500
+Processing by MoviesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.9100ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9800ms
+  Rendered movies/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 54ms (Views: 47.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-04 10:44:44 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:44 -0500
+
+
+Started GET "/assets/d3.v3.min.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:44 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:44 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-11-04 10:44:44 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:44 -0500
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2013-11-04 10:44:44 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:44 -0500
+
+
+Started GET "/assets/all_movies.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:44 -0500
+
+
+Started GET "/assets/starwars-logo-2.png" for 127.0.0.1 at 2013-11-04 10:44:44 -0500
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:44 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:44 -0500
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:44 -0500
+
+
+Started GET "/assets/handlebars.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:44 -0500
+
+
+Started GET "/assets/stars.png" for 127.0.0.1 at 2013-11-04 10:44:44 -0500
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2013-11-04 10:44:44 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-04 10:44:51 -0500
+Processing by MoviesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.3800ms
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.0460ms
+  Rendered movies/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 17ms (Views: 10.0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-11-04 10:44:52 -0500
+
+
+Started GET "/assets/d3.v3.min.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:52 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:52 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:52 -0500
+
+
+Started GET "/assets/all_movies.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:52 -0500
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2013-11-04 10:44:52 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:52 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:52 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:52 -0500
+
+
+Started GET "/assets/handlebars.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:52 -0500
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:52 -0500
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-11-04 10:44:52 -0500
+
+
+Started GET "/assets/starwars-logo-2.png" for 127.0.0.1 at 2013-11-04 10:44:52 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-04 10:44:52 -0500
+
+
+Started GET "/assets/stars.png" for 127.0.0.1 at 2013-11-04 10:44:52 -0500
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2013-11-04 10:44:52 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-04 10:45:17 -0500
+Processing by MoviesController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 3.5440ms
+  Rendered movies/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 59ms (Views: 51.7ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-11-04 10:45:17 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:17 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:17 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:17 -0500
+
+
+Started GET "/assets/d3.v3.min.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:17 -0500
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2013-11-04 10:45:17 -0500
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:17 -0500
+
+
+Started GET "/assets/handlebars.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:17 -0500
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:17 -0500
+
+
+Started GET "/assets/all_movies.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:17 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:17 -0500
+
+
+Started GET "/assets/starwars-logo-2.png" for 127.0.0.1 at 2013-11-04 10:45:17 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:18 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-04 10:45:18 -0500
+
+
+Started GET "/assets/stars.png" for 127.0.0.1 at 2013-11-04 10:45:18 -0500
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2013-11-04 10:45:18 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-04 10:45:24 -0500
+Processing by MoviesController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7940ms
+  Rendered movies/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 58ms (Views: 54.1ms)
+
+
+Started GET "/assets/d3.v3.min.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:25 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-04 10:45:25 -0500
+
+
+Started GET "/assets/all_movies.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:25 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:25 -0500
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2013-11-04 10:45:25 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:25 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:25 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-11-04 10:45:25 -0500
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:25 -0500
+
+
+Started GET "/assets/handlebars.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:25 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:25 -0500
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:25 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:25 -0500
+
+
+Started GET "/assets/starwars-logo-2.png" for 127.0.0.1 at 2013-11-04 10:45:25 -0500
+
+
+Started GET "/assets/stars.png" for 127.0.0.1 at 2013-11-04 10:45:25 -0500
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2013-11-04 10:45:25 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-04 10:45:50 -0500
+Processing by MoviesController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7110ms
+  Rendered movies/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 36ms (Views: 31.1ms)
+
+
+Started GET "/assets/d3.v3.min.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:50 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:50 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:50 -0500
+
+
+Started GET "/assets/all_movies.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:50 -0500
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:50 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-11-04 10:45:50 -0500
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2013-11-04 10:45:50 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:50 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:50 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-04 10:45:50 -0500
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:50 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:50 -0500
+
+
+Started GET "/assets/starwars-logo-2.png" for 127.0.0.1 at 2013-11-04 10:45:50 -0500
+
+
+Started GET "/assets/handlebars.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:50 -0500
+
+
+Started GET "/assets/stars.png" for 127.0.0.1 at 2013-11-04 10:45:50 -0500
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2013-11-04 10:45:50 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-04 10:45:52 -0500
+Processing by MoviesController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=star_wars_data_development collection=movies selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.4500ms
+  Rendered movies/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 18ms (Views: 13.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-04 10:45:52 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-11-04 10:45:53 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:53 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:53 -0500
+
+
+Started GET "/assets/all_movies.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:53 -0500
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2013-11-04 10:45:53 -0500
+
+
+Started GET "/assets/d3.v3.min.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:53 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:53 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:53 -0500
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:53 -0500
+
+
+Started GET "/assets/handlebars.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:53 -0500
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:53 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-11-04 10:45:53 -0500
+
+
+Started GET "/assets/starwars-logo-2.png" for 127.0.0.1 at 2013-11-04 10:45:53 -0500
+
+
+Started GET "/assets/stars.png" for 127.0.0.1 at 2013-11-04 10:45:53 -0500
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2013-11-04 10:45:53 -0500

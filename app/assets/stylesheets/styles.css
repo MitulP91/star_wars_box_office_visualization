@@ -64,12 +64,14 @@ svg {
 	/*float: left;*/
 	position: absolute;
 	left: 10%;
+	margin-top: -100px;
 }
 
 #container2 {
 	/*float: right;*/
 	position: absolute;
 	right: 10%;
+	margin-top: -100px;
 }
 
 .lightsaber { 

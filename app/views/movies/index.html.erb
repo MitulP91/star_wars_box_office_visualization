@@ -2,6 +2,7 @@
 <div id="home">
 	<%= image_tag "starwars-logo-2.png" %>
 	<h2> A Visualization of Box Office Gross</h2> 
+	<h1 id="total"><%= '$' + number_with_delimiter(@display_num, :delimiter => ',') %></h3>
 
 	<%= link_to 'View Gross of Each Movie', graph_path, id: 'button' %>
 
