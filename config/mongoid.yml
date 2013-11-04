@@ -62,11 +62,16 @@ development:
 
     # Ensure all times are UTC in the app side. (default: false)
     # use_utc: false
+ENV['MONGOLAB_URI'] = s053838.mongolab.com:53838
+
 production:
   sessions:
     default:
-        uri: <%= ENV['MONGOLAB_URI'] %>
-      database: star_wars_data_production
+      hosts: 
+        - <%= ENV['MONGOLAB_URI'] %>
+      database: heroku_app19171990
+      username: heroku_app19171990
+      password: b4rt9tmeb8bfkcat686v9pdked
 
 test:
   sessions:
