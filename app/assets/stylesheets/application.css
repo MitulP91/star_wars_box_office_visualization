@@ -13,6 +13,7 @@
  */
 
 html {
-	background: url(star-wars-wallpaper-hd-hd-desktop-backgrounds.jpg);
+	/*background: url(star-wars-wallpaper-hd-hd-desktop-backgrounds.jpg);*/
+	background: url(stars.png);
 	background-size: cover;
 }

@@ -1,22 +1,25 @@
-<h2> Star Wars Data Visualization of Box Office Gross</h2> 
-<h1>Total Box Office Gross: <%= "$" + number_with_delimiter(@display_num, :delimiter => ',') %></h1>
+<div id="home">
+	<%= image_tag "starwars-logo-2.png" %>
+	<h2> A Visualization of Box Office Gross</h2> 
+	<!-- <h1>Total Box Office Gross: <%= "$" + number_with_delimiter(@display_num, :delimiter => ',') %></h1> -->
 
-<%= link_to 'View Gross of Each Movie', graph_path %>
+	<%= link_to 'View Gross of Each Movie', graph_path, id: 'button' %>
 
-<div id="container">
-	<div class="lightsaber" id= "yoda">
-		<label for="yoda-example"></label>
-		<input type="checkbox" id="yoda-example" checked="checked">
-		<div class="switch"></div>
-		<div class="plasma yoda"></div>
+	<div id="container">
+		<div class="lightsaber" id= "yoda">
+			<label for="yoda-example"></label>
+			<input type="checkbox" id="yoda-example" checked="checked">
+			<div class="switch"></div>
+			<div class="plasma yoda"></div>
+		</div>
 	</div>
-</div>
 
-<div id="container2">
-	<div class="lightsaber" id= "vader">
-		<label for="darth-vader-example"></label>
-		<input type="checkbox" id="darth-vader-example" checked="checked">
-		<div class="switch"></div>
-		<div class="plasma vader"></div>
+	<div id="container2">
+		<div class="lightsaber" id= "vader">
+			<label for="darth-vader-example"></label>
+			<input type="checkbox" id="darth-vader-example" checked="checked">
+			<div class="switch"></div>
+			<div class="plasma vader"></div>
+		</div>
 	</div>
 </div>

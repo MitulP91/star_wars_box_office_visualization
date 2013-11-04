@@ -10,11 +10,10 @@ h1 {
 h2 {
 	font-family: 'Futura', sans-serif;
 	font-size: 35px;
+  margin-bottom: 50px;
 }
-a {
-  
-  font-size: 25px;
 
+a {
   &:visited {
     outline: none;
     color: #389dc1;
@@ -31,4 +30,24 @@ a {
 
 .gross {
 	font-size: 17px;
+}
+
+img {
+  width: 600px;
+}
+
+#button {
+  color: white;
+  font-size: 25px;
+
+  background-color: black;
+  border: 2px solid white;
+
+  padding: 15px 30px;
+  text-decoration: none;
+}
+
+#button:hover {
+  color: rgb(229,177,58);
+  border: 2px solid rgb(229,177,58);
 }

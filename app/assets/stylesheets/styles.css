@@ -61,12 +61,15 @@ svg {
 /* ********************lightsaber*****************/
 
 #container {
-	float: left;
-	/*margin-top: 20px;*/
+	/*float: left;*/
+	position: absolute;
+	left: 10%;
 }
 
 #container2 {
-	float: right;
+	/*float: right;*/
+	position: absolute;
+	right: 10%;
 }
 
 .lightsaber { 
