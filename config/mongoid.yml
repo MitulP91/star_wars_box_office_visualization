@@ -65,11 +65,10 @@ development:
 production:
   sessions:
     default:
-      hosts: 
-        - <%= ENV['MONGOLAB_URI'] %>
-      database: heroku_app19171990
-      username: heroku_app19171990
-      password: b4rt9tmeb8bfkcat686v9pdked
+      uri: ENV['MONGOLAB_URI']
+      options:
+        safe: true
+        skip_version_check: true
 
 test:
   sessions:
