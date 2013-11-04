@@ -1,5 +1,5 @@
 html {
-	background: url(/assets/stars.png);
+	background-image: url(/assets/stars.png);
 	background-size: cover;
 }
 
