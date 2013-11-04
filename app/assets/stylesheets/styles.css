@@ -1,5 +1,5 @@
 body {
-  font: 12px sans-serif;
+  font-family: 'Futura', sans-serif;
   color: white;
   text-align: center;
 }
@@ -30,8 +30,8 @@ svg {
 
 .display {
 	position: absolute;
-	top: 43%;
-	left: 40%;
+	top: 36%;
+	left: 37%;
 	z-index: 500;
 }
 
@@ -48,11 +48,12 @@ svg {
 }
 
 #disp-3 {
-	display: none;
+	left: 39%;
 }
 
 #disp-4 {
 	display: none;
+
 }
 #disp-5 {
 	display: none;
