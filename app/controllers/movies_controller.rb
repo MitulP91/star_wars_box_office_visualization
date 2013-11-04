@@ -7,7 +7,7 @@ class MoviesController < ApplicationController
 			total_gross += movie.gross
 		end
 
-		@display_num = "$#{total_gross}"
+		@display_num = total_gross
 	end
 
 	def graph

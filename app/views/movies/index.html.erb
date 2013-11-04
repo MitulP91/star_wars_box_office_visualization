@@ -1,4 +1,4 @@
 <h2> Star Wars Data Visualization of Box Office Gross</h2> 
-<h1>Total Box Office Gross: <%= @display_num %> </h1>
+<h1>Total Box Office Gross: <%= "$" + number_with_delimiter(@display_num, :delimiter => ',') %></h1>
 
 <%= link_to 'View Gross of Each Movie', graph_path %>
